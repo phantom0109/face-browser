@@ -552,41 +552,8 @@ const options = new faceapi.TinyFaceDetectorOptions({ inputSize: 320 })
 
 ## Utility Classes
 
-### IBox
 
-``` javascript
-export interface IBox {
-  x: number
-  y: number
-  width: number
-  height: number
-}
-```
 
-### IFaceDetection
-
-``` javascript
-export interface IFaceDetection {
-  score: number
-  box: Box
-}
-```
-
-### IFaceLandmarks
-
-``` javascript
-export interface IFaceLandmarks {
-  positions: Point[]
-  shift: Point
-}
-```
-
-### WithFaceDetection
-
-``` javascript
-export type WithFaceDetection<TSource> = TSource & {
-  detection: FaceDetection
-}
 ```
 
 ### WithFaceLandmarks
