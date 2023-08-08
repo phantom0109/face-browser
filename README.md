@@ -553,8 +553,6 @@ const options = new faceapi.TinyFaceDetectorOptions({ inputSize: 320 })
 ## Utility Classes
 
 
-
-
 ```
 
 ### WithFaceLandmarks
