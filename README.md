@@ -599,28 +599,9 @@ export type WithFaceLandmarks<TSource> = TSource & {
 }
 ```
 
-### WithFaceDescriptor
 
-``` javascript
-export type WithFaceDescriptor<TSource> = TSource & {
-  descriptor: Float32Array
-}
-```
 
-### WithFaceExpressions
 
-``` javascript
-export type WithFaceExpressions<TSource> = TSource & {
-  expressions: FaceExpressions
-}
-```
-
-### WithAge
-
-``` javascript
-export type WithAge<TSource> = TSource & {
-  age: number
-}
 ```
 
 ### WithGender
