@@ -11,28 +11,6 @@ let minConfidence = 0.5
 let inputSize = 512
 let scoreThreshold = 0.5
 
-function getFaceDetectorOptions() {
-  return selectedFaceDetector === SSD_MOBILENETV1
-    ? new faceapi.SsdMobilenetv1Options({ minConfidence })
-    : new faceapi.TinyFaceDetectorOptions({ inputSize, scoreThreshold })
-}
-
-function onIncreaseMinConfidence() {
-  minConfidence = Math.min(faceapi.utils.round(minConfidence + 0.1), 1.0)
-  $('#minConfidence').val(minConfidence)
-  updateResults()
-}
-
-function onDecreaseMinConfidence() {
-  minConfidence = Math.max(faceapi.utils.round(minConfidence - 0.1), 0.1)
-  $('#minConfidence').val(minConfidence)
-  updateResults()
-}
-
-function onInputSizeChanged(e) {
-  changeInputSize(e.target.value)
-  updateResults()
-}
 
 function changeInputSize(size) {
   inputSize = parseInt(size)
